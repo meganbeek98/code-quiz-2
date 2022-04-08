@@ -1,0 +1,91 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Coding Quiz</title>
+        <link>                          <!-- possibly insert another CSS file-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+    
+    </head>
+
+    <body id="body">
+        <header class="p-2" >
+            <strong><a href="">VIEW HIGH SCORES!</a> </strong>  <!--INSERT LINK to HIGHSCORE PAGE-->
+            <span class="float-right mr-2" id="timer">Time: 0</span>
+        
+        </header>
+
+        <!--Home Page-->
+        <main class= "container mt-5" id="home-page">
+
+            <!-- emojis to use 🔳 🧠 ⏱ 💡 ⌛️ 💾 📊 ✏️ ⚔️ 🚫 🌐 👍  -->
+
+            <div class="row justify-content-center mt-5 pt-3 pb-3" id="start">
+                <div class="col-10 col-lg-8 text-center">
+                    <h1>{JavaScript} <br> 🧠Code Quiz🧠</h1>
+                    <br>
+                    <h5><p>Welcome to the Quiz!<br></h5>
+                            <b><i>💡QUIZ DETAILS:</i><br>
+                            </b>🔳 This quiz is timed. Your timer will start with 1 minute and 30 seconds.<br>
+                            🔳 If you choose an incorrect answer, 20 seconds will be deducted from your remaining time.<br>
+                            🔳 Your final score will be based on how many seconds you have remaining at the end.<br>
+                            🔳 If you run out the time on the clock, your quiz will end.<br>
+                            🔳 At the end of the quiz, input your intials to store your persnal high score.<br>
+                            🔳 See how you stack up to our other quiz-takers! View the 'HIGH SCORES' page.<br>
+                            🔳 Oh.. and good luck!
+                        </p> <br>
+                    <button type="button" class="btn btn-info btn-lg" id="start-btn">START QUIZ</button>
+                </div>
+            </div>
+        </main>
+        
+        <!--QUIZ QUESTIONS & ANSWERS-->
+        <div class="container mt-5 d-none" id="quiz">
+            <div class="row justify-content-center mt-5 pt-3 pb-3">
+                <div class="col-10 col-lg-8 id=QnA">
+                    <h3 class="mb-4" id="questions">Question:</h3>
+                    <ul class="list-unstyled" id="answers">
+                        <li class="chosenAnswer">A]</li>
+                        <li class="chosenAnswer">B]</li>
+                        <li class="chosenAnswer">C]</li>
+                        <li class="chosenAnswer">D]</li>
+                    </ul>
+                    <p class="analysis"></p>
+                </div>
+            </div>
+        </div>
+
+        <!--QUIZ SUBMISSION-->
+        <div class="container mt-5 d-none" id="submission">
+            <div class="row justify-content-center mt-5 pt-3 pb-3">
+                <div class="col-10 col-lg-8">
+                    <h2>Congratulations! You have completed the quiz!</h2>
+                    <p id="user-score"></p>
+                    <form class="form-group">
+                        <label for="new-score">Please enter your initials: </label>
+                        <input type="text" id="user-initials">
+                        <button type="button" class="btn btn-info btn sm submitBtn">Save Your Score</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+        <script src="questions.js"></script>
+        <script src="main.js"></script>
+        
+    </body>
+
+</html>

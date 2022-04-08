@@ -1,0 +1,47 @@
+html, body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #ff00ff;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+h2, h5, span {
+    color: rgb(0,0,0);
+}
+
+.p-2 {
+    background-color: aqua;
+    font-size: 25px;
+}
+
+#score-list {
+    font-size: 20px;
+}
+
+ol {
+    list-style: none;
+    color: rgb(0,0,0);
+}
+
+li {
+    counter-increment: li;
+}
+
+li::before {
+    content: "." counter(li);
+    color: rgb(43, 43, 122);
+    display: inline-block;
+    width: 16px;
+    margin-left: -24px;
+    margin-right: 10px;
+    text-align: right;
+    direction: rtl;
+}
+
+#scoresTitle {
+    padding-left: 17px;
+}
