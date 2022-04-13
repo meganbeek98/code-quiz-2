@@ -18,6 +18,10 @@ h2, h5, span {
     font-size: 25px;
 }
 
+.p-2 a {
+    color:#ff69b4;
+}
+
 #score-list {
     font-size: 20px;
 }

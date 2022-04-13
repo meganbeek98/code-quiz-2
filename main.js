@@ -56,14 +56,14 @@ function makeQuestions() {
     }
 }
 
-// display option to enter name to scoreboard
+// pop up -- option to enter name to save to highscores
 function displayScore() {
     document.getElementById("quiz").classList.add('d-none');
     document.getElementById("submitScore").classList.remove('d-none');
     userScoreElement.textContent = "FINAL SCORE: " + secondsLeft + ".";
 }
 
-// Event Listeners for Main Buttons
+// Event Listeners -- for buttons
 startBtn.addEventListener("click", startTimer);
 submitBtn.addEventListener("click", function (event) {
     event.stopPropagation();
@@ -75,17 +75,16 @@ submitBtn.addEventListener("click", function (event) {
 function addScore () {
     userNameInput = document.getElementById("userName").value
     
-    // create a new object with name and score keys
+    // creates objec (name and score keys)
 var newScore = {
         name: userNameInput,
         score: secondsLeft
     };
-    // check if there are scores in local storage first and take value
-    //if not, make a blank array
+    // checks for scores in local storage, THEN takes value || OTHERWISE, black array
     var highScores = JSON.parse(localStorage.getItem("highScores") || "[]");
     // push object into score array
     highScores.push(newScore)
-    // turn objects into an array of strings + put it into local storage
+    // turn objects into an array of strings (stringify) || + puts into local storage
     localStorage.setItem("highScores", JSON.stringify(highScores));
 }
 
@@ -102,14 +101,14 @@ function showFeedback(){
 answerChoices.addEventListener("click", function(event) {
     var pElement = document.getElementsByClassName("feedback")[0]
     
-    // evaluation of user's answer choices & feedback
+    // analizes user's answers/choices + gives feedback
     if (answer === event.target.textContent) {   
-        pElement.innerHTML = "YES!";
+        pElement.innerHTML = "Correct!😁";
         setTimeout(hideFeedback,1225);
         showFeedback();   
         
     } else {
-        pElement.innerHTML = "WRONG.";
+        pElement.innerHTML = "Wrong🚫";
         setTimeout(hideFeedback,1225);
         secondsLeft = secondsLeft - 20;
         showFeedback();
