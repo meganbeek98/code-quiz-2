@@ -4,7 +4,7 @@ html, body {
 }
 
 h1 {
-    color: #ff00ff;
+    color: #ff69b4;
     font-size: 50px;
     font-weight: bolder;
 }
@@ -14,7 +14,7 @@ h2, h5, span {
 }
 
 .p-2 {
-    background-color: aqua;
+    background-color: #00ffff;
     font-size: 25px;
 }
 
