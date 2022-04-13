@@ -5,8 +5,7 @@ var questions = [
             "It is used to lay out the basic skeleton of a webpage.",
             "It is used solely for styling the way a webpage looks.",
             "It is used to add interactive behavior to webpages.",
-            "none of the above"
-        ],
+            "none of the above"],
         answer: "It is used to add interactive behavior to webpages."
 
     },
@@ -16,8 +15,7 @@ var questions = [
             "summary",
             "strings",
             "numbers",
-            "objects"
-        ],
+            "objects" ],
         answer: "summary"
     },
     {
@@ -26,16 +24,14 @@ var questions = [
             "array",
             "number",
             "undefined",
-            "boolean"
-        ],
+            "boolean" ],
         answer: "boolean"
     },
     {
         title: "'You can use single OR double quotes when writing strings in JavaScript.' True or False?",
         choices: [
             "true",
-            "false"
-        ],
+            "false" ],
         answer: "true"
     },
     {
@@ -44,8 +40,7 @@ var questions = [
             "Larry Page",
             "Brendon Eich",
             "Mark Zuckerberg",
-            "Bill Gates"
-        ],
+            "Bill Gates"],
         answer: "Brendon Eich"
     },
     {
@@ -54,18 +49,16 @@ var questions = [
             "Descriptive Option Models",
             "Document Object Mode",
             "Document Object Model",
-            "Dynamic Object Modes",
-        ],
+            "Dynamic Object Modes" ],
         answer: "Document Object Model"
     },
     {
         title: "What does API stand for in JavaScript?",
         choices: [
-            "Advanced Programming [tegers",
+            "Advanced Programming Integers",
             "Advanced Placement Interfaces",
             "Application Programming Interfaces",
-            "Application Placement Integers"
-        ],
+            "Application Placement Integers" ],
         answer: "Application Programming Interfaces"
     }
     

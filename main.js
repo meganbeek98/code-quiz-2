@@ -59,7 +59,7 @@ function makeQuestions() {
 // display option to enter name to scoreboard
 function displayScore() {
     document.getElementById("quiz").classList.add('d-none');
-    document.getElementById("submit-score").classList.remove('d-none');
+    document.getElementById("submitScore").classList.remove('d-none');
     userScoreElement.textContent = "FINAL SCORE: " + secondsLeft + ".";
 }
 
