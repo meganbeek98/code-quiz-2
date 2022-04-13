@@ -8,14 +8,14 @@ var submitScoreElement = document.querySelector("#submitScore");
 var userScoreElement = document.getElementById("user-score");
 var userNameInput;
 var questionHead = document.getElementById("questions");
-var answerChoices = document.getElementById("answer");
+var answerChoices = document.getElementById("answers");
 
 var questionNumber = -1;
 var answer;
 
 function startTimer() {
 
-    documents.getElementById("home").classList.add('d-none');
+    document.getElementById("home").classList.add('d-none');
     document.getElementById("quiz").classList.remove('d-none');
 
     // timer for 120
@@ -99,7 +99,7 @@ function showFeedback(){
     pElement.removeAttribute('style');
 }
 
-answerChoices.addEventListener("click", function (event) {
+answerChoices.addEventListener("click", function(event) {
     var pElement = document.getElementsByClassName("feedback")[0]
     
     // evaluation of user's answer choices & feedback
